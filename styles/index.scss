@@ -1,5 +1,6 @@
 @import './perfis';
 @import './styles';
+@import './media-desktok';
 
 *{
   font-family: 'League Spartan', sans-serif;
@@ -8,76 +9,82 @@
   box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.container{
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin: 200px;
-} 
+@media(min-width:375px){
 
-.cima{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-}
+  body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 200px;
+  } 
+  
+  .cima{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  
+  .container1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .container2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textomaior{
+    color:$primeira;
+    width: 60%;
+    font-weight: 700;
+    font-size: 60px;
+  }
+  
+  .textomenor{
+    width: 70%;
+    color: $terceira;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .cima, .baixo{
+    display: flex;
+  }
+  
+  .card{
+    background-color: $quarta;
+    color: $primeira;
+    font-weight: 700;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-radius: 8%;
+  }
+  
+  .container2{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
 
-.container1 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-
-.container2{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.textomaior{
-  color:$primeira;
-  width: 60%;
-  font-weight: 700;
-  font-size: 60px;
-}
-
-.textomenor{
-  width: 70%;
-  color: $terceira;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.cima, .baixo{
-  display: flex;
-}
-
-.card{
-  background-color: $quarta;
-  color: $primeira;
-  font-weight: 700;
-  width: 400px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-  border-radius: 8%;
-}
-
-.container2{
-  display: flex;
-  justify-content: space-between;
-}
 
 #card2{
   margin-left: 80px;
@@ -85,4 +92,5 @@ body{
 
 #card3{
   margin-left: 160px;
+}
 }

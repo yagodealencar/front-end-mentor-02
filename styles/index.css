@@ -27,22 +27,22 @@
 .perfil .texto {
   color: #f7f2f7;
 }
-.perfil .tudo {
+
+@media (min-width: 375px) {
+  #perfil2 {
+    margin-top: 15px;
+  }
+  #perfil3 {
+    margin-top: 30px;
+  }
+  .trio {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}
+.tudo {
   margin: 40px;
-}
-
-#perfil2 {
-  margin-top: 15px;
-}
-
-#perfil3 {
-  margin-top: 30px;
-}
-
-.trio {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
 }
 
 .dupla {
@@ -51,6 +51,101 @@
   justify-content: center;
 }
 
+@media (max-width: 375px) {
+  .container {
+    margin-top: 50px;
+  }
+  .container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #000000;
+    margin-top: 50px;
+  }
+  .container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .textomaior {
+    color: #502050;
+    width: 70%;
+    font-weight: 700;
+    font-size: 33px;
+    border: solid 1px #0104f1;
+    text-align: center;
+  }
+  .textomenor {
+    width: 85%;
+    color: #937b92;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+  .cima, .baixo {
+    display: flex;
+  }
+  .card {
+    background-color: #f7f2f7;
+    color: #502050;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8%;
+  }
+  .container2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .texto {
+    font-size: 13px;
+  }
+  .tudo {
+    margin: 35px;
+  }
+  .container, .cima, .baixo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    flex-direction: column;
+  }
+  #card1, #card2, #card3 {
+    width: 85%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .estrelas > img {
+    width: 14px;
+    height: 14px;
+    margin-left: 0;
+  }
+  .perfil {
+    width: 85%;
+    height: 200px;
+  }
+  #perfil2, #perfil3 {
+    margin-top: 0;
+  }
+  .trio {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .baixo {
+    margin-bottom: 70px;
+  }
+}
 * {
   font-family: "League Spartan", sans-serif;
   margin: 0;
@@ -58,81 +153,72 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin: 200px;
-}
-
-.cima {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-}
-
-.container1 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.container2 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.textomaior {
-  color: #502050;
-  width: 60%;
-  font-weight: 700;
-  font-size: 60px;
-}
-
-.textomenor {
-  width: 70%;
-  color: #937b92;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.cima, .baixo {
-  display: flex;
-}
-
-.card {
-  background-color: #f7f2f7;
-  color: #502050;
-  font-weight: 700;
-  width: 400px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 8%;
-}
-
-.container2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-#card2 {
-  margin-left: 80px;
-}
-
-#card3 {
-  margin-left: 160px;
+@media (min-width: 375px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 200px;
+  }
+  .cima {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .container1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textomaior {
+    color: #502050;
+    width: 60%;
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .textomenor {
+    width: 70%;
+    color: #937b92;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .cima, .baixo {
+    display: flex;
+  }
+  .card {
+    background-color: #f7f2f7;
+    color: #502050;
+    font-weight: 700;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8%;
+  }
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #card2 {
+    margin-left: 80px;
+  }
+  #card3 {
+    margin-left: 160px;
+  }
 }/*# sourceMappingURL=index.css.map */

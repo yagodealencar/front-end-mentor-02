@@ -1,0 +1,119 @@
+@import './styles';
+
+@media(max-width:375px){  
+
+
+.container{
+  margin-top: 50px;
+}
+.container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #000000;
+  margin-top: 50px;
+}
+
+
+.container2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.textomaior{
+  color:$primeira;
+  width: 70%;
+  font-weight: 700;
+  font-size: 33px;
+  border: solid 1px #0104f1;
+  text-align: center;
+}
+
+.textomenor{
+  width: 85%;
+  color: $terceira;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+
+.cima, .baixo{
+  display: flex;
+}
+
+.card{
+  background-color: $quarta;
+  color: $primeira;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  border-radius: 8%;
+}
+
+.container2{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+  .texto{
+    font-size: 13px;
+  }
+  .tudo{
+    margin: 35px;
+  }
+
+  .container, .cima, .baixo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    flex-direction: column;
+    
+  }
+  #card1, #card2, #card3{
+    width: 85%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .estrelas > img{
+    width: 14px;
+    height: 14px;
+    margin-left: 0;
+  }
+
+  .perfil{
+    width: 85%;
+    height: 200px;
+  }
+
+  #perfil2, #perfil3{
+    margin-top: 0;
+  }
+  
+  .trio{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .baixo{
+    margin-bottom: 70px;
+  }
+
+ 
+  }

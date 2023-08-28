@@ -29,25 +29,28 @@
   .texto{
     color: $quarta;
   }
-  .tudo{
-    margin: 40px;
+ 
+}
+@media(min-width:375px){
+  #perfil2{
+    margin-top: 15px;
   }
+  
+  #perfil3{
+    margin-top: 30px;
+  }
+  
+  .trio{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
 }
 
-#perfil2{
-  margin-top: 15px;
+.tudo{
+  margin: 40px;
 }
-
-#perfil3{
-  margin-top: 30px;
-}
-
-.trio{
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
 .dupla{
   display: flex;
   flex-direction: column;
