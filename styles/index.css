@@ -62,7 +62,6 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 1px solid #000000;
     margin-top: 50px;
   }
   .container2 {
@@ -78,7 +77,6 @@
     width: 70%;
     font-weight: 700;
     font-size: 33px;
-    border: solid 1px #0104f1;
     text-align: center;
   }
   .textomenor {
